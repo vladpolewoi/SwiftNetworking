@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C0575962BD5838300F59842 /* CoinService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0575952BD5838300F59842 /* CoinService.swift */; };
 		0CACCE292BD00CA700BD5791 /* NetworkingTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CACCE282BD00CA700BD5791 /* NetworkingTutorialApp.swift */; };
 		0CACCE2B2BD00CA700BD5791 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CACCE2A2BD00CA700BD5791 /* ContentView.swift */; };
 		0CACCE2D2BD00CA800BD5791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CACCE2C2BD00CA800BD5791 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C0575952BD5838300F59842 /* CoinService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinService.swift; sourceTree = "<group>"; };
 		0CACCE252BD00CA700BD5791 /* NetworkingTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkingTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CACCE282BD00CA700BD5791 /* NetworkingTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTutorialApp.swift; sourceTree = "<group>"; };
 		0CACCE2A2BD00CA700BD5791 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C0575942BD5837700F59842 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0C0575952BD5838300F59842 /* CoinService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		0CACCE1C2BD00CA700BD5791 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +92,7 @@
 		0CACCE382BD00DEE00BD5791 /* AllCoins */ = {
 			isa = PBXGroup;
 			children = (
+				0C0575942BD5837700F59842 /* Service */,
 				0CACCE3B2BD00E0800BD5791 /* ViewModel */,
 				0CACCE3A2BD00E0300BD5791 /* View */,
 				0CACCE392BD00DF800BD5791 /* Model */,
@@ -192,6 +203,7 @@
 			files = (
 				0CACCE2B2BD00CA700BD5791 /* ContentView.swift in Sources */,
 				0CACCE3F2BD00EAA00BD5791 /* CoinsViewModel.swift in Sources */,
+				0C0575962BD5838300F59842 /* CoinService.swift in Sources */,
 				0CACCE292BD00CA700BD5791 /* NetworkingTutorialApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
