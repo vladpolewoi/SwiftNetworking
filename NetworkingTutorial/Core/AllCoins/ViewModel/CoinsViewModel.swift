@@ -9,17 +9,24 @@ import Foundation
 
 class CoinsViewModel: ObservableObject {
   @Published var coins = [Coin]()
+  @Published var errorMessage: String?
 
   private let service = CoinDataService()
 
   init() {
+    print("Init")
     fetchCoins()
   }
 
   func fetchCoins() {
-    service.fetchCoins { coin in
+    service.fetchCoins { coins, error in
       DispatchQueue.main.sync {
-        self.coins = coin
+        if let error = error {
+          self.errorMessage = error.localizedDescription
+          return
+        }
+        
+        self.coins = coins ?? []
       }
     }
   }
